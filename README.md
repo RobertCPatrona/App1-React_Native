@@ -8,7 +8,7 @@ Normal user: <br />
 Email: user1@gmail.com <br />
 Password: user1pass
 
-Admin (only this one)<br />
+Admin (only this one): <br />
 Email: admin@gmail.com<br />
 Password: adminpass
 
