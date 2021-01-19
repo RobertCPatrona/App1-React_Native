@@ -1,14 +1,18 @@
 ## App1-React_Native
 
-#### User authentication is done with Firebase and the Database with SQLite. 
+#### User Authentication is done with Firebase and the Database with SQLite. 
 
 #### Pre existing credetials. Can be used directly:
 Normal user: 
+
 Email: user1@gmail.com
+
 Password: user1pass
 
 Admin (only this one)
+
 Email: admin@gmail.com
+
 Password: adminpass
 
 #### Main page
