@@ -4,8 +4,7 @@
 
 #### Pre existing credetials. Can be used directly:
 
-Normal user: 
-
+Normal user: <br />
 Email: user1@gmail.com
 
 Password: user1pass
