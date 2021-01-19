@@ -19,3 +19,8 @@ Password: adminpass
 
 #### Foot Items & House Items <br />
 -> If logged in as Admin, you can `Add, Edit or Remove` an Item. 
+
+#### TO Run
+-> Download the Explo Client on your phone. 
+-> Run `npm install --global expo-cli` then navigate to the dir and run `npm install` then to start the app `npm start` and scan the QR code with the Expo mobile app.
+-> If
