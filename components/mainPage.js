@@ -39,7 +39,55 @@ export default function mainPage({ navigation }) {
         "create table if not exists food_items (id integer primary key not null, name text, price integer)"
       );
     });
+
+    initUsersTable();
   }, []);
+
+  const addUser = (email) => {
+    var params;
+
+    if (email.toString().toLowerCase() === "admin@gmail.com") {
+      params = [email, 0, 1];
+    } else {
+      params = [email, 0, 0];
+    }
+
+    var query =
+      "INSERT INTO users (id,email,isLogged,isAdmin) VALUES (null,?,?,?)";
+
+    db.transaction((tx) => {
+      tx.executeSql(
+        query,
+        params,
+        (tx, results) => {},
+        function (tx, err) {
+          return;
+        }
+      );
+    });
+  };
+
+  const initUsersTable = () => {
+    var query = "SELECT * FROM users";
+
+    db.transaction((tx) => {
+      tx.executeSql(
+        query,
+        [],
+        (tx, results) => {
+          if (results.rows._array.length === 0) {
+            //Add the pre-defined user1 and admin
+            addUser("admin@gmail.com");
+            addUser("user1@gmail.com");
+          }
+        },
+        function (tx, err) {
+          Alert.alert("Failed to initialize Users DB");
+          return;
+        }
+      );
+    });
+  };
 
   function handleAuthChange(user) {
     setAuth(!!user);
