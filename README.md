@@ -2,7 +2,7 @@
 
 #### User Authentication is done with Firebase and the Database with SQLite. 
 
-#### Pre existing credetials. Can be used directly:
+#### Pre existing credetials. Can be used directly to log in:
 
 Normal user: <br />
 Email: user1@gmail.com <br />
