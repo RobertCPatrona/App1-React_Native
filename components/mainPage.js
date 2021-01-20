@@ -192,19 +192,10 @@ export default function mainPage({ navigation }) {
             pages.
           </Text>
           <View style={{ paddingTop: 10 }} />
-          <Button
-            onPress={() =>
-              navigation.navigate("Login", { getCurrentEmail: getCurrentEmail })
-            }
-            title="Log In"
-          />
+          <Button onPress={() => navigation.navigate("Login")} title="Log In" />
           <View style={{ paddingTop: 10 }} />
           <Button
-            onPress={() =>
-              navigation.navigate("SignUp", {
-                getCurrentEmail: getCurrentEmail,
-              })
-            }
+            onPress={() => navigation.navigate("SignUp")}
             title="Sign Up"
           />
         </View>

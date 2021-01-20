@@ -51,7 +51,6 @@ export default function SignUpPage({ navigation, route }) {
         () => {
           addToDB();
           navigation.navigate("Home");
-          route.params.getCurrentEmail();
         },
         (error) => {
           Alert.alert(error.message);
