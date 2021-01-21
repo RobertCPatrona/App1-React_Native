@@ -1,6 +1,6 @@
 ## App1-React_Native
 
-#### User Authentication is done with Firebase and the Database with SQLite. 
+#### User Authentication is done with Firebase and the Database with SQLite. The DB has 3 tables: users, food_items and house_items.
 
 #### Pre existing credetials. Can be used directly to log in:
 
